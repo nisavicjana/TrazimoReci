@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TrazimoReci", "TrazimoReci.vcxproj", "{EFDC31E3-1B50-4966-BD1B-6C4423013142}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFDC31E3-1B50-4966-BD1B-6C4423013142}.Debug|x64.ActiveCfg = Debug|x64
+		{EFDC31E3-1B50-4966-BD1B-6C4423013142}.Debug|x64.Build.0 = Debug|x64
+		{EFDC31E3-1B50-4966-BD1B-6C4423013142}.Debug|x86.ActiveCfg = Debug|Win32
+		{EFDC31E3-1B50-4966-BD1B-6C4423013142}.Debug|x86.Build.0 = Debug|Win32
+		{EFDC31E3-1B50-4966-BD1B-6C4423013142}.Release|x64.ActiveCfg = Release|x64
+		{EFDC31E3-1B50-4966-BD1B-6C4423013142}.Release|x64.Build.0 = Release|x64
+		{EFDC31E3-1B50-4966-BD1B-6C4423013142}.Release|x86.ActiveCfg = Release|Win32
+		{EFDC31E3-1B50-4966-BD1B-6C4423013142}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {68EE400C-00BE-4D06-869F-666EB8424A1D}
+	EndGlobalSection
+EndGlobal
