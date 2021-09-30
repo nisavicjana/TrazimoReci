@@ -1,8 +1,6 @@
 #include <iostream>
 #include <fstream>
-#include "Header.h"
-
-
+#include "header.h"
 
 int main() {
 	Tree tree;
@@ -20,6 +18,9 @@ int main() {
 		std::cerr << "Error: file could not be created!\n";
 		exit(0);
 	}
-	tree.printAllWords(outWords);
 	outWords.close();
+
+	tree.printAllWords(outWords);
+
+	return 0;
 }

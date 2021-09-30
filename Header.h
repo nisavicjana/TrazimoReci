@@ -10,9 +10,7 @@ public:
 	~Node();
 
 	int childExists(char c);
-	char getChar();
 	std::vector<Node*>& getChildren();
-	bool isLeaf();
 	void recursivePrint(std::ostream& out, std::string currentStr = "");
 
 	friend class Root;
@@ -35,7 +33,6 @@ public:
 	Tree();
 
 	void addWord(std::string word);
-	Root& getRoot();
 	bool checkWordValidation(std::string myWord);
 	void printAllWords(std::ostream& out);
 private:
