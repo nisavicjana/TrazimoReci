@@ -10,8 +10,8 @@ int main() {
 	tree.addWord("djole");
 	tree.addWord("dan");
 
-	bool valid = tree.checkWordValidation("da");
-	std::cout << (valid ? "jeste" : "nije") << '\n';
+	std::cout << (tree.checkWordValidation("housr") ? "jeste" : "nije") << '\n';
+	std::cout << (tree.checkWordValidation("house") ? "jeste" : "nije") << '\n';
 
 	std::ofstream outWords("output.txt");
 	if (outWords) {
