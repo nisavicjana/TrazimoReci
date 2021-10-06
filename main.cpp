@@ -14,13 +14,12 @@ int main() {
 	std::cout << (valid ? "jeste" : "nije") << '\n';
 
 	std::ofstream outWords("output.txt");
-	if (!outWords) {
-		std::cerr << "Error: file could not be created!\n";
-		exit(0);
-	}
-	outWords.close();
+	if (outWords) {
+		tree.printAllWords(outWords);
 
-	tree.printAllWords(outWords);
+		outWords.close();
+	} else
+		std::cerr << "Error: file could not be created!\n";	
 
 	return 0;
 }
