@@ -8,10 +8,6 @@ Node::Node(char c) {
 	endOfWord = false;
 }
 
-std::vector<Node*>& Node::getChildren() {
-	return children;
-}
-
 Node::~Node() {
 	for(size_t i = 0; i < children.size(); i++)
 		delete children[i];
