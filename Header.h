@@ -10,15 +10,12 @@ public:
 	~Node();
 
 	int childExists(char c);
-	std::vector<Node*>& getChildren();
 	void recursivePrint(std::ostream& out, std::string currentStr = "");
 
 	friend class Root;
 	friend class Tree;
-protected:
-	std::vector<Node*> children;
-
 private:
+	std::vector<Node*> children;
 	char ch;
 	bool endOfWord;
 };

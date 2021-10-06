@@ -8,10 +8,6 @@ Node::Node(char c) {
 	endOfWord = false;
 }
 
-std::vector<Node*>& Node::getChildren() {
-	return children;
-}
-
 Node::~Node() {
 	for(size_t i = 0; i < children.size(); i++)
 		delete children[i];
@@ -74,10 +70,9 @@ void Tree::printAllWords(std::ostream& out) {
 
 bool Tree::checkWordValidation(std::string myWord) {
 	Node* currNode = &root;
-	size_t i;
 
-	for(i = 0; i < myWord.size(); i++) {
-		size_t j = currNode->childExists(myWord[i]);
+	for(size_t i = 0; i < myWord.size(); i++) {
+		int j = currNode->childExists(myWord[i]);
 
 		if(j >= 0)
 			currNode = currNode->children[j];
@@ -85,5 +80,5 @@ bool Tree::checkWordValidation(std::string myWord) {
 			return false;
 	}
 
-	return i == myWord.size() - 1;
+	return true;
 }
