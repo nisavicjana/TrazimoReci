@@ -3,11 +3,6 @@
 #include <stack>
 #include "Header.h"
 
-Node::Node(char c) {
-	ch = c;
-	endOfWord = false;
-}
-
 Node::~Node() {
 	for(auto child : children)
 		delete child;
@@ -37,10 +32,6 @@ void Root::addWord(std::string newWord) {
 	}
 
 	currNode->endOfWord = true;
-}
-
-void Tree::addWord(std::string word) {
-	root.addWord(word);
 }
 
 Tree::Tree() {
