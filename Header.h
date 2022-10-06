@@ -1,5 +1,4 @@
-#ifndef MyFile
-#define MyFile
+#pragma once
 
 #include <string>
 #include <vector>
@@ -35,6 +34,3 @@ public:
 private:
 	Root root;
 };
-
-#endif 
-
