@@ -3,11 +3,6 @@
 #include <stack>
 #include "Header.h"
 
-Node::Node(char c) {
-	ch = c;
-	endOfWord = false;
-}
-
 Node::~Node() {
 	for(auto child : children)
 		delete child;

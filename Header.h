@@ -5,7 +5,7 @@
 
 class Node {
 public:
-	Node(char c = '\0');
+	Node(char c = '\0') : ch(c) {};
 	~Node();
 
 	int childExists(char c);
@@ -16,7 +16,7 @@ public:
 private:
 	std::vector<Node*> children;
 	char ch;
-	bool endOfWord;
+	bool endOfWord = false;
 };
 
 class Root : public Node {
