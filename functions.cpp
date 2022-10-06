@@ -9,16 +9,17 @@ Node::Node(char c) {
 }
 
 Node::~Node() {
-	for(size_t i = 0; i < children.size(); i++)
-		delete children[i];
+	for(auto child : children)
+		delete child;
 }
 
 int Node::childExists(char c) {
-	for(size_t i = 0; i < children.size(); i++)
-		if(children[i]->ch == c)
-			return i;
+	auto it = std::find(children.begin(), children.end(), c);
 
-	return -1;
+	if(it != children.end())
+		return std::distance(it, children.begin());
+	else
+		return -1;
 }
 
 void Root::addWord(std::string newWord) {
