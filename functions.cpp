@@ -34,10 +34,6 @@ void Root::addWord(std::string newWord) {
 	currNode->endOfWord = true;
 }
 
-void Tree::addWord(std::string word) {
-	root.addWord(word);
-}
-
 Tree::Tree() {
 	std::ifstream txtFile("manjereci.txt");
 

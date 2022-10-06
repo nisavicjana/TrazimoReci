@@ -28,7 +28,7 @@ class Tree {
 public:
 	Tree();
 
-	void addWord(std::string word);
+	void addWord(std::string word) { root.addWord(word); }
 	bool checkWordValidation(std::string myWord);
 	void printAllWords(std::ostream& out);
 private:
